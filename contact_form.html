@@ -1,16 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
-    <link rel="stylesheet" href="contact_form.css">
-</head>
-<body>
+    <link rel="stylesheet" href="contact_form.css" />
+  </head>
+  <body>
     <div class="container">
-        <form action="" method="get">
-            
-        </form>
+      <form action="" method="get">
+        <div class="main_heading">
+        <h1>Contact Form</h1>
+        <h5>Please fill all the texts in the fileds.</h5>
+        </div>
+        <p>
+          Your Name :
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Full Name"
+            required
+          />
+        </p>
+        <p>
+          Your Email :
+          <input type="email" name="email" placeholder="Valid Email Address" />
+        </p>
+        <p>
+          Message :
+          <textarea
+            placeholder="Your Message to Us"
+            name="message"
+            id="message"
+          ></textarea>
+        </p>
+        <p>
+          Subject :
+          <select name="enquiry" id="enquiry">
+            <option value="">Select subject of your query</option>
+            <option value="Job openings">Job openings</option>
+            <option value="Application status">Application status</option>
+            <option value="Job Apply">Job Apply</option>
+            <option value="OTHER">OTHER</option>
+          </select>
+        </p>
+        <input type="submit" value="Send">
+      </form>
     </div>
-</body>
+  </body>
 </html>
